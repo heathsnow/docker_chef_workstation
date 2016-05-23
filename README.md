@@ -12,8 +12,6 @@ Installs
 * bundler
 * chefdk
 * chef-provisioning-vsphere
-* vagrant
-* vagrant-winrm plugin
 
 How to use this image
 ---------------------
