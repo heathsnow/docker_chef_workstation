@@ -16,12 +16,10 @@ RUN \
   rm chefdk_0.14.25-1_amd64.deb
 
 # Chefdk PATH addition
-RUN \
-  echo 'export PATH="/root/.chefdk/gem/ruby/2.1.0/bin:$PATH"' >> /root/.bashrc
+ENV PATH="/root/.chefdk/gem/ruby/2.1.0/bin:$PATH"
 
 # Executables PATH addition
-RUN \
-  echo 'export PATH=~/bin:$PATH' >> /root/.bashrc
+ENV export PATH=~/bin:$PATH
 
 # Install AWS CLI
 RUN \
