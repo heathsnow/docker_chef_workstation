@@ -12,6 +12,7 @@ Installs
 * bundler
 * chefdk
 * chef-provisioning-vsphere
+* aws cli
 
 How to use this image
 ---------------------
