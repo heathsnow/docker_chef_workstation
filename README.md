@@ -13,6 +13,7 @@ Installs
 * chefdk
 * chef-provisioning-vsphere
 * aws cli
+* packer
 
 How to use this image
 ---------------------
@@ -26,10 +27,16 @@ docker run -it -v /path/to/cookbooks:/chef -v /path/to/configs_and_keys:/root/.c
 Now you can do the things!  Such as. . .
 ```ruby
 # Bundler
-> cd /chef/my_cookbook
-> bundle install
+$> cd /chef/my_cookbook
+$> bundle install
 # Knife
-> knife environment show dev -c /chef/knife.rb
+#> knife environment show dev -c /chef/knife.rb
+# Chef
+$> chef -v
+# Packer
+$> packer -v
+# AWS CLI
+$> aws help
 ```
 
 Contributing
