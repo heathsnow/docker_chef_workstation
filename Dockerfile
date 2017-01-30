@@ -23,9 +23,9 @@ ENV PATH=$PATH:/packer/
 
 # Install ChefDK
 RUN \
-  wget https://packages.chef.io/stable/ubuntu/14.04/chefdk_0.19.6-1_amd64.deb && \
-  dpkg -i chefdk_0.19.6-1_amd64.deb && \
-  rm chefdk_0.19.6-1_amd64.deb
+  wget https://packages.chef.io/stable/ubuntu/14.04/chefdk_0.14.25-1_amd64.deb && \
+  dpkg -i chefdk_0.14.25-1_amd64.deb && \
+  rm chefdk_0.14.25-1_amd64.deb
 
 ENV PATH="/root/.chefdk/gem/ruby/2.1.0/bin:$PATH"
 
