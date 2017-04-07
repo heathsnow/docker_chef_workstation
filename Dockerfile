@@ -7,7 +7,8 @@ RUN \
     build-essential \
     unzip \
     groff \
-    less
+    less \
+    ca-certificates
 
 # Install Packer (0.12.2)
 RUN \
@@ -29,15 +30,15 @@ RUN \
 
 ENV PATH="/root/.chefdk/gem/ruby/2.1.0/bin:$PATH"
 
-# Install Terraform (0.7.7)
+# Install Terraform (0.8.7)
 RUN \
   mkdir /terraform
 
 RUN \
   cd /terraform && \
-  wget https://releases.hashicorp.com/terraform/0.7.7/terraform_0.7.7_linux_amd64.zip && \
-  unzip terraform_0.7.7_linux_amd64.zip && \
-  rm terraform_0.7.7_linux_amd64.zip
+  wget https://releases.hashicorp.com/terraform/0.8.7/terraform_0.8.7_linux_amd64.zip && \
+  unzip terraform_0.8.7_linux_amd64.zip && \
+  rm terraform_0.8.7_linux_amd64.zip
 
 ENV PATH=$PATH:/terraform/
 
